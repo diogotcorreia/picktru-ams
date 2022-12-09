@@ -71,9 +71,9 @@
     <element xsi:type="archimate:ApplicationComponent" name="SMART" id="id-4681357a701f4f989383328b084fe059"/>
     <element xsi:type="archimate:ApplicationComponent" name="RUN" id="id-b826e04a4ef4477db9cf68cffdc6c95a"/>
     <element xsi:type="archimate:ApplicationComponent" name="TEST" id="id-4e57ff78c3fd4dda8f3fb0939014ff2f"/>
-    <element xsi:type="archimate:ApplicationInterface" name="C-ID: Gestão de Identidades" id="id-a5329ee2854e4f4d86a2b751981c6290"/>
-    <element xsi:type="archimate:ApplicationInterface" name="C-OUT: Gestão de Saídas" id="id-5bfc0d7bba67445ba609285c65fc46d6"/>
-    <element xsi:type="archimate:ApplicationInterface" name="C-MNG: Gestão Geral" id="id-d198d288258f4923a5e0226634fc1f21"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Gestão de Identidades" id="id-a5329ee2854e4f4d86a2b751981c6290"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Gestão de Saídas" id="id-5bfc0d7bba67445ba609285c65fc46d6"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Gestão Geral" id="id-d198d288258f4923a5e0226634fc1f21"/>
     <element xsi:type="archimate:ApplicationInterface" name="RUN" id="id-da02331a92f849a4badcba45fa2cfee9"/>
     <element xsi:type="archimate:ApplicationService" name="RUN" id="id-685f68ef761a4d6190ef0037395d3de6"/>
     <element xsi:type="archimate:ApplicationFunction" name="RUN" id="id-e653598a3b3844ef9fcc5bdeb884c0f0"/>
