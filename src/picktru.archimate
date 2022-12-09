@@ -46,7 +46,7 @@
     <element xsi:type="archimate:BusinessActor" name="Funcionários" id="id-fab981e94bd0448dac3b61c40f5550ab"/>
     <element xsi:type="archimate:BusinessRole" name="Chefe de Equipa" id="id-6fa1aa7f71e14c4fa6eef75cfe4b7b86"/>
     <element xsi:type="archimate:BusinessActor" name="Departamento de Projetos" id="id-63b8aedef49548bd97d2cd0c5fdc5280"/>
-    <element xsi:type="archimate:BusinessActor" name="Equipa" id="id-ff2278ffbdbe4f99bd0268b1f43ad964"/>
+    <element xsi:type="archimate:BusinessActor" name="Equipa de Instalação" id="id-ff2278ffbdbe4f99bd0268b1f43ad964"/>
     <element xsi:type="archimate:BusinessActor" name="Departamento de Operações" id="id-daaf3dd613204390aaa85643da18afd1"/>
     <element xsi:type="archimate:BusinessInteraction" id="id-2ad2644f60c64802b46ad809d94c1452"/>
     <element xsi:type="archimate:BusinessInteraction" name="Execução conjunta de P-ON" id="id-5af3fe4f136e444bb3ac29fe45781eeb"/>
@@ -241,7 +241,7 @@
         <sourceConnection xsi:type="archimate:Connection" id="id-6aae5404606f46b48770a8267c736964" source="id-d4ab0a4d011c47aba7742358e5cd2cb6" target="id-90623a3790cb4718bd1adcbb14a8bc13" archimateRelationship="id-e821a6da20f1414c89dd0934e9d5f1bc"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-678dc7d7157547aba8f73ea57fee0eb1" targetConnections="id-a250fbd09c224e1da0324e9408b99738" archimateElement="id-da6347bb585247fa8437099375b39002">
-        <bounds x="1128" y="259" width="120" height="55"/>
+        <bounds x="1152" y="259" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-42c6383d4d16441caf424dae4f500fad" source="id-678dc7d7157547aba8f73ea57fee0eb1" target="id-90623a3790cb4718bd1adcbb14a8bc13" archimateRelationship="id-b461975a7fcd4da7924587d53fa3eff2"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-b2281a25d068490e8a48f7d507ef4b2a" targetConnections="id-820162c5b8214c1c91b65f8734f97793" archimateElement="id-4681357a701f4f989383328b084fe059">
@@ -315,7 +315,7 @@
         </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-ba478101bd9d46d3badadd9b36414af6" archimateElement="id-daaf3dd613204390aaa85643da18afd1">
-        <bounds x="1128" y="360" width="120" height="55"/>
+        <bounds x="1152" y="360" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-5f800775f4d44d27a42e476a6c648670" source="id-ba478101bd9d46d3badadd9b36414af6" target="id-d4ab0a4d011c47aba7742358e5cd2cb6" archimateRelationship="id-497857f708da4e549037929dab929590"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-a250fbd09c224e1da0324e9408b99738" source="id-ba478101bd9d46d3badadd9b36414af6" target="id-678dc7d7157547aba8f73ea57fee0eb1" archimateRelationship="id-5a000e6d7c164e3ba4c0bc08c915f5d6"/>
       </child>
