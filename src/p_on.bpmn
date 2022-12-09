@@ -43,8 +43,8 @@
     <bpmn:sequenceFlow id="Flow_0r0sltl" sourceRef="Activity_0z029nd" targetRef="Gateway_1o39uuz" />
     <bpmn:sequenceFlow id="Flow_0qmpip2" sourceRef="Activity_029m132" targetRef="Activity_0qdacim" />
     <bpmn:sequenceFlow id="Flow_1ci4yyi" sourceRef="Activity_0qdacim" targetRef="Gateway_1tleuo8" />
-    <bpmn:sequenceFlow id="Flow_05acsbv" name="U-SW envia Plano de Revisão" sourceRef="Gateway_1tleuo8" targetRef="Event_190k71a" />
-    <bpmn:sequenceFlow id="Flow_06xbm5l" name="U-SW avisa que se pode abrir a Loja" sourceRef="Gateway_1tleuo8" targetRef="Event_0mfebsn" />
+    <bpmn:sequenceFlow id="Flow_05acsbv" name="U-SW envia plano de revisão" sourceRef="Gateway_1tleuo8" targetRef="Event_190k71a" />
+    <bpmn:sequenceFlow id="Flow_06xbm5l" name="U-SW avisa que se pode abrir a loja" sourceRef="Gateway_1tleuo8" targetRef="Event_0mfebsn" />
     <bpmn:sequenceFlow id="Flow_11mochh" sourceRef="Activity_0bg5r63" targetRef="Event_1mmm8qz" />
     <bpmn:sequenceFlow id="Flow_13a7c7f" sourceRef="Event_0mfebsn" targetRef="Activity_0bg5r63" />
     <bpmn:exclusiveGateway id="Gateway_0dds5wc">
@@ -155,7 +155,7 @@
       <bpmn:task id="Activity_0ya84y1" name="Atualizar Tipos de Artigos na Aplicação SMART" />
       <bpmn:task id="Activity_11jxc0x" name="Atualizar a Aplicação SMART" />
     </bpmn:adHocSubProcess>
-    <bpmn:subProcess id="Activity_0x3s3xv" name="Configurar Plano de Testes">
+    <bpmn:subProcess id="Activity_0x3s3xv" name="Configurar Aplicações">
       <bpmn:incoming>Flow_1j108i9</bpmn:incoming>
       <bpmn:outgoing>Flow_1vsu36e</bpmn:outgoing>
       <bpmn:startEvent id="Event_14bk9nk">
@@ -189,7 +189,7 @@
       <bpmn:incoming>Flow_1dcmcd2</bpmn:incoming>
       <bpmn:outgoing>Flow_05q0a3l</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:subProcess id="Activity_1qoiu19" name="Reconfigurar Plano de Testes">
+    <bpmn:subProcess id="Activity_1qoiu19" name="Repor Aplicações">
       <bpmn:incoming>Flow_0fds58w</bpmn:incoming>
       <bpmn:outgoing>Flow_146qy74</bpmn:outgoing>
       <bpmn:startEvent id="Event_1efd3k9">
@@ -419,7 +419,7 @@
         <di:waypoint x="1285" y="490" />
         <di:waypoint x="1352" y="490" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1271" y="451" width="88" height="27" />
+          <dc:Bounds x="1271" y="451" width="89" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_06xbm5l_di" bpmnElement="Flow_06xbm5l">
