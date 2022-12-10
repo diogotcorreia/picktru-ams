@@ -1,0 +1,121 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[legalpaper, portrait, lmargin=1cm, rmargin=1cm, tmargin=2cm, bmargin=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage{svg}
+\usepackage[most]{tcolorbox}
+
+\graphicspath{ {./} }
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=blue,
+  citecolor=blue,
+  pdftitle={Relatório AMS - Entrega 1 - 2022/2023},
+  pdfpagemode=FullScreen,
+}
+
+\definecolor{bg}{rgb}{1,0.96,0.9}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Grupo \textbf{37}}
+\lhead{Relatório Entrega 1 AMS 2022/2023 LEIC-A}
+\cfoot{Diogo Gaspar (99207), Diogo Correia (99211) e Tiago Silva (99335)}
+
+\renewcommand{\footrulewidth}{0.2pt}
+
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\diamond$}
+
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \vspace*{5cm}
+
+    \Huge
+    \textbf{Projeto AMS - Entrega 1}
+
+    \vspace{0.5cm}
+    \LARGE
+    Grupo 037 | Turno L08 | LEIC-A
+
+    \vspace{0.5cm}
+    \large
+    Prof. Maria do Rosário Carvalho
+
+    \vfill
+  \end{center}
+  \large
+  \begin{itemize}
+    \item[] \textbf{Diogo Gaspar} (99207) - 14h
+    \item[] \textbf{Diogo Correia} (99211) - 14h
+    \item[] \textbf{Tiago Silva} (99335) - 14h
+  \end{itemize}
+\end{titlepage}
+
+\begin{tcolorbox}[enhanced jigsaw,colback=bg,boxrule=0pt,arc=4pt]
+  \begin{large}
+    \textbf{Notas:}
+  \end{large}
+
+  \begin{small}
+    \textbf{Diagrama de Vista Geral do Negócio}
+  \end{small}
+  \begin{itemize}
+    \item Optou-se por não se explicitar todos os tipos de relatórios resultantes do processo P-ON,
+          considerando apenas um tipo \textit{"Relatório"} genérico, dado que se considerou tal
+          divisão como um detalhe interno do processo.
+  \end{itemize}
+
+  \begin{small}
+    \textbf{Diagrama do Processo P-SET}
+  \end{small}
+  \begin{itemize}
+    \item Utilizou-se o \textit{Data Object} "Plano de Projeto", dado ser um documento
+          utilizado frequentemente durante o decorrer do processo.
+          Não existe, porém, qualquer informação relativa ao mesmo ter de ser guardado permanentemente/acedido
+          por outros processos, pelo que a opção \textit{Data Store} foi prontamente descartada.
+  \end{itemize}
+
+  \begin{small}
+    \textbf{Diagrama do Processo P-ON}
+  \end{small}
+  \begin{itemize}
+    \item Utilizaram-se \textit{Parallel Gateways} sempre que um fluxo teria de esperar por uma
+          mensagem após a execução de uma tarefa, de forma a prevenir problemas de sincronização,
+          tal como indicado \href{https://moodle.dei.tecnico.ulisboa.pt/mod/forum/discuss.php?d=7213}{nesta questão no Moodle da UC}.
+    \item Optou-se pela utilização de \textit{Message Start Events} em vez de \textit{Signal Start Events}, dado que nada é dito
+          no Universo de Discurso sobre quem contacta a U-HW e a U-SW.
+    \item Considerou-se que a U-HW não espera que a U-SW termine de analisar o plano
+          de trabalhos para se deslocar até à loja, dado que tal não é explícito no Universo de Discurso.
+  \end{itemize}
+\end{tcolorbox}
+
+\begin{landscape}
+  \begin{center}
+    \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/archimate.svg}
+  \end{center}
+\end{landscape}
+
+\begin{landscape}
+  \begin{center}
+    \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/p_set.svg}
+  \end{center}
+\end{landscape}
+
+\begin{landscape}
+  \begin{center}
+    \includesvg[inkscapelatex=false,width=1.35\textwidth]{assets/p_on.svg}
+  \end{center}
+\end{landscape}
+
+\end{document}
