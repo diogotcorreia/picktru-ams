@@ -10,14 +10,15 @@
 \usepackage{pdflscape}
 \usepackage{svg}
 \usepackage[most]{tcolorbox}
+\usepackage{xcolor}
 
 \graphicspath{ {./} }
+
+\definecolor{linkcolor}{HTML}{1588e0}
+
 \hypersetup{
   colorlinks=true,
-  linkcolor=blue,
-  filecolor=magenta,
-  urlcolor=blue,
-  citecolor=blue,
+  allcolors=linkcolor,
   pdftitle={Relatório AMS - Entrega 1 - 2022/2023},
   pdfpagemode=FullScreen,
 }
@@ -68,16 +69,21 @@
   \end{large}
 
   \begin{small}
-    \textbf{Diagrama de Vista Geral do Negócio}
+    \textbf{Diagrama de Vista Geral do Negócio} (Figure \ref{fig:archimate})
   \end{small}
   \begin{itemize}
     \item Optou-se por não se explicitar todos os tipos de relatórios resultantes do processo P-ON,
           considerando apenas um tipo \textit{"Relatório"} genérico, dado que se considerou tal
           divisão como um detalhe interno do processo.
+    \item Optou-se por considerar o produto \textbf{PICKTRU} como um agregado de
+          \textit{Business Services} e do Contrato, por oposição a corresponder a uma
+          composição dos mesmos - a título de exemplo, cremos ser possível afirmar que
+          se o serviço \textit{Celebrar Contrato} deixar de existir, o produto deve poder
+          continuar a existir, deixando apenas de haver novos clientes.
   \end{itemize}
 
   \begin{small}
-    \textbf{Diagrama do Processo P-SET}
+    \textbf{Diagrama do Processo P-SET} (Figure \ref{fig:p-set-bpmn})
   \end{small}
   \begin{itemize}
     \item Utilizou-se o \textit{Data Object} "Plano de Projeto", dado ser um documento
@@ -87,35 +93,46 @@
   \end{itemize}
 
   \begin{small}
-    \textbf{Diagrama do Processo P-ON}
+    \textbf{Diagrama do Processo P-ON} (Figure \ref{fig:p-on-bpmn})
   \end{small}
   \begin{itemize}
     \item Utilizaram-se \textit{Parallel Gateways} sempre que um fluxo teria de esperar por uma
-          mensagem após a execução de uma tarefa, de forma a prevenir problemas de sincronização,
+          mensagem após a execução de uma tarefa, por forma a prevenir problemas de sincronização,
           tal como indicado \href{https://moodle.dei.tecnico.ulisboa.pt/mod/forum/discuss.php?d=7213}{nesta questão no Moodle da UC}.
     \item Optou-se pela utilização de \textit{Message Start Events} em vez de \textit{Signal Start Events}, dado que nada é dito
           no Universo de Discurso sobre quem contacta a U-HW e a U-SW.
     \item Considerou-se que a U-HW não espera que a U-SW termine de analisar o plano
           de trabalhos para se deslocar até à loja, dado que tal não é explícito no Universo de Discurso.
+    \item Utilizaram-se os \textit{Data Objects} "Plano de Revisão" e "Plano de Testes",
+          dado serem ambos documentos partilhados entre unidades (que cremos ser relevante assinalar).
   \end{itemize}
 \end{tcolorbox}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/archimate.svg}
-  \end{center}
+    \caption{Diagrama de Vista Geral do Negócio}
+    \label{fig:archimate}
+  \end{figure}
 \end{landscape}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/p_set.svg}
-  \end{center}
+    \caption{Diagrama do Processo P-SET}
+    \label{fig:p-set-bpmn}
+  \end{figure}
 \end{landscape}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.35\textwidth]{assets/p_on.svg}
-  \end{center}
+    \caption{Diagrama do Processo P-ON}
+    \label{fig:p-on-bpmn}
+  \end{figure}
 \end{landscape}
 
 \end{document}
