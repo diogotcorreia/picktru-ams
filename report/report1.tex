@@ -10,14 +10,15 @@
 \usepackage{pdflscape}
 \usepackage{svg}
 \usepackage[most]{tcolorbox}
+\usepackage{xcolor}
 
 \graphicspath{ {./} }
+
+\definecolor{linkcolor}{HTML}{1588e0}
+
 \hypersetup{
   colorlinks=true,
-  linkcolor=blue,
-  filecolor=magenta,
-  urlcolor=blue,
-  citecolor=blue,
+  allcolors=linkcolor,
   pdftitle={Relatório AMS - Entrega 1 - 2022/2023},
   pdfpagemode=FullScreen,
 }
@@ -68,7 +69,7 @@
   \end{large}
 
   \begin{small}
-    \textbf{Diagrama de Vista Geral do Negócio}
+    \textbf{Diagrama de Vista Geral do Negócio} (Figure \ref{fig:archimate})
   \end{small}
   \begin{itemize}
     \item Optou-se por não se explicitar todos os tipos de relatórios resultantes do processo P-ON,
@@ -82,7 +83,7 @@
   \end{itemize}
 
   \begin{small}
-    \textbf{Diagrama do Processo P-SET}
+    \textbf{Diagrama do Processo P-SET} (Figure \ref{fig:p-set-bpmn})
   \end{small}
   \begin{itemize}
     \item Utilizou-se o \textit{Data Object} "Plano de Projeto", dado ser um documento
@@ -92,7 +93,7 @@
   \end{itemize}
 
   \begin{small}
-    \textbf{Diagrama do Processo P-ON}
+    \textbf{Diagrama do Processo P-ON} (Figure \ref{fig:p-on-bpmn})
   \end{small}
   \begin{itemize}
     \item Utilizaram-se \textit{Parallel Gateways} sempre que um fluxo teria de esperar por uma
@@ -108,21 +109,30 @@
 \end{tcolorbox}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/archimate.svg}
-  \end{center}
+    \caption{Diagrama de Vista Geral do Negócio}
+    \label{fig:archimate}
+  \end{figure}
 \end{landscape}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.5\textwidth]{assets/p_set.svg}
-  \end{center}
+    \caption{Diagrama do Processo P-SET}
+    \label{fig:p-set-bpmn}
+  \end{figure}
 \end{landscape}
 
 \begin{landscape}
-  \begin{center}
+  \begin{figure}
+    \centering
     \includesvg[inkscapelatex=false,width=1.35\textwidth]{assets/p_on.svg}
-  \end{center}
+    \caption{Diagrama do Processo P-ON}
+    \label{fig:p-on-bpmn}
+  \end{figure}
 \end{landscape}
 
 \end{document}
