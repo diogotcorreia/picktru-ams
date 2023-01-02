@@ -1,2 +1,5 @@
 # Archi backup files
 *.bak
+
+# EA temporary files
+*.qea-journal
