@@ -71,6 +71,7 @@
   \begin{small}
     \textbf{(B.1.) Integração dos modelos da "Vista de Negócio"} (Figures \ref{fig:archimate}, \ref{fig:p-set-bpmn} \& \ref{fig:p-on-bpmn})
   \end{small}
+
   No que aos diagramas que à Vista de Negócio dizem respeito, o trabalho realizado focou-se
   sobretudo em corrigir os erros apontados na ronda de \textit{feedback} proporcionada
   pela professora, entre os quais se considerou relevante salientar:
@@ -98,22 +99,40 @@
     \textbf{(B.2.) Diagramas de Casos de Uso} (Figures \ref{fig:uc-run} \& \ref{fig:uc-store})
   \end{small}
   \begin{itemize}
-    \item TODO
+    \item Relativamente ao diagrama corresponde aos Casos de Uso do \textbf{Sistema STORE},
+          optou-se por representar o caso de uso \textbf{"Ser notificado"} como algo
+          inerente (\textit{incluído}, portanto) aos casos de uso associados ao ator \textbf{Visitante} -
+          sempre que o Visitante realiza algo, \textbf{RUN} é notificado. Note-se ainda que foi representado
+          o caso de uso \textbf{"Gerir tipo de artigos"}, realizado pela Unidade de Software,
+          dado estar presente no Universo de Discurso.
+    \item No que ao \textbf{Sistema RUN} diz respeito, considerou-se ser relevante realçar que todos
+          casos de uso relacionados com a obtenção de listas de zonas e artigos foram condensados num
+          único caso de uso, já que a informação detalhada sobre cada um deles não era relevante para
+          o entendimento do diagrama.
   \end{itemize}
 
   \begin{small}
     \textbf{(B.3.) Diagrama de Classes (em UML) do modelo de domínio} (Figure \ref{fig:uml})
   \end{small}
-  \begin{itemize}
-    \item TODO
-  \end{itemize}
+
+  No que ao diagrama de classes do modelo diz respeito, optou-se por considerar todos os
+  principais estados descritos no Universo de Discurso como dois estados separados, dado
+  que estes pareciam ser facilmente agrupáveis em estados independentes entre si; note-se
+  que esta independência é assegurada dinamicamente, no que corresponderia a um detalhe
+  de implementação equivalente à chamada de um método aquando da realização de uma ação (por exemplo).
+  Note-se ainda que a classe \textbf{Ação} corresponde a uma generalização de duas outras classes
+  de ações, \textbf{Retirar} e \textbf{Colocar} em prateleiras - a utilização de mecanismos de generalização,
+  ao invés de um estado, foi puramente uma opção semântica (por forma a enfatizar a diferença entre ambas).
 
   \begin{small}
     \textbf{(B.4.) Diagrama de Máquina de Estados} (Figure \ref{fig:state-machine})
   \end{small}
-  \begin{itemize}
-    \item TODO
-  \end{itemize}
+
+  O diagrama de máquina de estados corresponde precisamente a um espelho dos estados referidos nas notas
+  acima, onde as guardas asseguram que os dois estados em paralelo nunca são incompatíveis.
+  Enfatizar o paralelismo no diagrama pareceu-nos particularmente interessante, levando
+  a que o leitor consiga (ainda mais) facilmente entender a lógica por detrás do mecanismo
+  de estados de cada Zona.
 
   \begin{small}
     \textbf{(B.5.) Diagrama de Blocos} (Figure \ref{fig:bbd})
