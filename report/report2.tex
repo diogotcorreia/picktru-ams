@@ -71,8 +71,27 @@
   \begin{small}
     \textbf{(B.1.) Integração dos modelos da "Vista de Negócio"} (Figures \ref{fig:archimate}, \ref{fig:p-set-bpmn} \& \ref{fig:p-on-bpmn})
   \end{small}
+  No que aos diagramas que à Vista de Negócio dizem respeito, o trabalho realizado focou-se
+  sobretudo em corrigir os erros apontados na ronda de \textit{feedback} proporcionada
+  pela professora, entre os quais se considerou relevante salientar:
   \begin{itemize}
-    \item TODO
+    \item No diagrama relativo ao processo \textbf{P-SET}, após proposta de alterações a um
+          plano de projeto por parte do cliente, era originalmente prevista uma nova análise da
+          descrição da loja (seguida de uma nova elaboração de plano de projeto); após as alterações
+          realizadas ao diagrama, esta proposta leva apenas a uma \textbf{revisão do plano de projeto},
+          como recomendado.
+    \item Ainda no que ao diagrama relativo a \textbf{P-SET} diz respeito, e conforme referido
+          na ronda de \textit{feedback}, foi removida a noção de \textit{error throwing} associada a um
+          resultado negativo na fase de testes, passando esta lógica a ser tratada numa \textit{exclusive
+            gateway}. Note-se que esta alteração levou também a um aliviar da complexidade desta secção
+          no diagrama, passando de um sub-processo expandido para uma tarefa (com \textit{boundary events} associados).
+    \item Por fim, e como última nota quanto ao diagrama supra-referido, os erros relacionados com "várias entradas
+          numa mesma tarefa" foram corrigidos (através da utilização de \textit{gateways}).
+    \item No diagrama relacionado com a Vista geral do Negócio (em \textit{ArchiMate}),
+          foram igualmente corrigidos os erros indicados na ronda de \textit{feedback}: a aplicação
+          \textbf{TEST} encontra-se agora devidamente ligada ao processo \textbf{P-ON}, e a Equipa de instalação
+          corresponde agora a uma colaboração entre \textit{Business Roles} ("Chefe de Equipa"
+          e "Funcionário de Equipa").
   \end{itemize}
 
   \begin{small}
